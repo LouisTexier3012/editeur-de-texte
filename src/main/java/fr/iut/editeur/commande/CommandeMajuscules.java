@@ -11,7 +11,7 @@ public class CommandeMajuscules extends CommandeDocument {
 //comande majuscule haha
     @Override
     public void executer() {
-        if(parameters.length < 2) {
+        if(parameters.length < 3) {
             System.err.println("Format attendu : majuscules;depart;fin");
             return;
         }

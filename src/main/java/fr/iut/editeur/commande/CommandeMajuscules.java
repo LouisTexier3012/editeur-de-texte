@@ -8,7 +8,7 @@ public class CommandeMajuscules extends CommandeDocument {
     public CommandeMajuscules(Document document, String[] parameters) {
         super(document, parameters);
     }
-
+//comande majuscule haha
     @Override
     public void executer() {
         if(parameters.length < 2) {

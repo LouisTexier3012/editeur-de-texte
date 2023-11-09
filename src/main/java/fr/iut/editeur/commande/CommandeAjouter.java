@@ -20,4 +20,9 @@ public class CommandeAjouter extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("ajouter permet d'ajouté du texte à la fin actuelle du texte. Format attendu : ajouter;texte");
+    }
+
 }

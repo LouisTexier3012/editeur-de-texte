@@ -21,4 +21,9 @@ public class CommandeEffacer extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("effacer permet de suprimer une partie du texte entre les pointeur debut et fin. Format attendu : effacer;debut;fin");
+    }
+
 }

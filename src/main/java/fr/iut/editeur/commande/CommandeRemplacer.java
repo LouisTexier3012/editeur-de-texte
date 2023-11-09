@@ -12,16 +12,19 @@ public class CommandeRemplacer extends CommandeDocument {
     @Override
     public void executer() {
         if(parameters.length < 4) {
-            System.err.println("Format attendu : remplacer;depart;fin;chaine");
+            System.err.println("Format attendu : remplacer;depart;fin;texte");
             return;
         }
         String texte = parameters[3];
-        // debut de la modif
         int depart = Integer.parseInt(parameters[1]);
-        // fin de la modif
         int fin = Integer.parseInt(parameters[2]);
         this.document.remplacer(depart,fin,texte);
         super.executer();
+    }
+
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("remplacer permet de remplacer une partie du texte entre les pointeur debut et fin. Format attendu : remplacer;depart;fin;texte");
     }
 
 }

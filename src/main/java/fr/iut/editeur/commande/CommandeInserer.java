@@ -19,4 +19,9 @@ public class CommandeInserer  extends CommandeDocument{
         this.document.inserer(indice,texteAAdd);
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("inserer permet de inserer un texte aprés une partie du texte aprés le pointeur debut. Format attendu : inserer;debut;texte");
+    }
 }

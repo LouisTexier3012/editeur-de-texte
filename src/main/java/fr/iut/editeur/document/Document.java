@@ -40,9 +40,7 @@ public class Document {
 
     public void inserer(int indice, String grandReplacement){
         String leftPart = texte.substring(0,indice+1);
-        System.out.println("left : "+ leftPart);
         String rightPart = texte.substring(indice+1);
-        System.out.println("right : "+ rightPart);
         texte = leftPart + grandReplacement + rightPart;
     }
     public void clear() {texte="";}

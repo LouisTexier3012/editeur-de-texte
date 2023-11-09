@@ -11,7 +11,7 @@ public class CommandeInserer  extends CommandeDocument{
     @Override
     public void executer() {
         if(parameters.length < 3) {
-            System.err.println("Format attendu : effacer;debut;fin");
+            System.err.println("Format attendu : inserer;debut;texte");
             return;
         }
         int indice = Integer.parseInt(parameters[1]);

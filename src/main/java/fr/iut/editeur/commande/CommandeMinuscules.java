@@ -20,4 +20,9 @@ public class CommandeMinuscules extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("minucules permet de mettre en minuscules une partie du texte entre les pointeur debut et fin. Format attendu : minuscules;depart;fin");
+    }
+
 }

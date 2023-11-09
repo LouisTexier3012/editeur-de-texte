@@ -19,4 +19,9 @@ public class CommandeClear extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("clear permet de suprimer tout le texte. Format attendu : clear");
+    }
+
 }

@@ -21,4 +21,9 @@ public class CommandeMajuscules extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("majuscules permet de mettre en majuscules une partie du texte entre les pointeur debut et fin. Format attendu : majuscules;depart;fin");
+    }
+
 }

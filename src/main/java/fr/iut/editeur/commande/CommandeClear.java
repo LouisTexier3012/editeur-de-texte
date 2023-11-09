@@ -16,7 +16,6 @@ public class CommandeClear extends CommandeDocument {
             return;
         }
         this.document.clear();
-        this.document.ajouter("tralalalalalalalalalalallalalalalalalalalalalalala");
         super.executer();
     }
 

@@ -19,4 +19,4 @@ jobs:
           java-version: 17
 
       - name: Build and test with Maven
-        run: DocumentTest
+        uses: DocumentTest

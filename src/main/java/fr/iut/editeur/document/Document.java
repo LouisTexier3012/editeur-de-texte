@@ -37,15 +37,18 @@ public class Document {
 
     public void minuscules(int start, int end){ remplacer(start,end, texteDocument.substring(start,end).toLowerCase());}
 
+    /** suprime le text entre start et end **/
     public void effacer(int start, int end) {
         remplacer(start,end,"");
     }
 
+    /** insert du text avec comme poingt de depard l'indice **/
     public void inserer(int indice, String grandReplacement){
         String leftPart = texteDocument.substring(0,indice+1);
         String rightPart = texteDocument.substring(indice+1);
         texteDocument = leftPart + grandReplacement + rightPart;
     }
+    /** clear tout le text **/
     public void clear() {
         texteDocument ="";}
 }

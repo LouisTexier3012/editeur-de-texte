@@ -26,7 +26,7 @@ public class Document {
     }
 
     public void remplacer(int start, int end, String grandRemplacement) {
-        String leftPart = texte.substring(0, start);
+        String leftPart = texte.substring(0, start+1);
         String rightPart = texte.substring(end);
         texte = leftPart + grandRemplacement + rightPart;
     }

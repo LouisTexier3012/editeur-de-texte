@@ -25,10 +25,10 @@ public class Document {
         return this.texteDocument;
     }
 
-    public void remplacer(int start, int end, String grandRemplacement) {
+    public void remplacer(int start, int end, String grandremplacement) {
         String leftPart = texteDocument.substring(0, start);
         String rightPart = texteDocument.substring(end);
-        texteDocument = leftPart + grandRemplacement + rightPart;
+        texteDocument = leftPart + grandremplacement + rightPart;
     }
 
     public void majuscules(int start, int end) {

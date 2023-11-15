@@ -1,5 +1,4 @@
-# Se déclenche quand on push sur n'importe quelle branche
-name: nom_custom_workflow
+name: Run Unit Tests
 
 on:
   push:
@@ -7,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  job1:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +23,9 @@ jobs:
         run: |
           ./mvnw compile
           ./mvnw test
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: target/surefire-reports

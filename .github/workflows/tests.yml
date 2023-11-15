@@ -19,10 +19,16 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Build with Maven
+      - name: Build with Maven and Run Tests
         run: |
-          ./mvnw compile
           ./mvnw test
+
+      - name: Check Test Results
+        run: |
+          if [ $? -ne 0 ]; then
+            echo "Tests failed. Exiting with a non-zero status."
+            exit 1
+          fi
 
       - name: Upload test results
         uses: actions/upload-artifact@v2
